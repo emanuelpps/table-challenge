@@ -5,9 +5,9 @@ export default function PrimaryTitle({
   description,
 }: TitleProps) {
   return (
-    <div className="text-2xl font-bold flex flex-col items-start gap-2 mb-4">
-      <h2>{primaryTitle}</h2>
-      <p>{description}</p>
+    <div className="font-bold flex flex-col items-start gap-2 mb-4 text-white">
+      <h2 className="text-4xl">{primaryTitle}</h2>
+      <p className="text-gray-400">{description}</p>
     </div>
   );
 }

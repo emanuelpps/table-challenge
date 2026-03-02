@@ -1,8 +1,11 @@
+import FilterBox from "./components/FilterBox";
+import Header from "./components/Header";
+
 export default function Clearings() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Clearings</h1>
-      <p>This is the Clearings page content.</p>
-    </div>
+    <section className="flex flex-col w-[90%] mx-auto">
+      <Header />
+      <FilterBox />
+    </section>
   );
 }
