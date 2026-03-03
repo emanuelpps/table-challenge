@@ -1,4 +1,4 @@
-# Dizizid Platform Challenge
+# Table Clearings Challenge
 
 A dashboard built with React, TypeScript, and Tailwind CSS for managing clearing cycles and organizations.
 
