@@ -38,5 +38,46 @@
     "email": "finance@curacaotech.org",
     "createdAt": "2025-04-20T08:15:00Z",
     "status": "ACTIVE"
+  },
+
+  {
+    "id": "org_5",
+    "name": "Startup Network Europe",
+    "legalName": "Startup Network Europe GmbH",
+    "country": "Germany",
+    "defaultCurrency": "EUR",
+    "email": "finance@startupnetwork.eu",
+    "createdAt": "2025-05-05T11:45:00Z",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "org_6",
+    "name": "Digital Creators Summit",
+    "legalName": "Digital Creators International LLC",
+    "country": "United States",
+    "defaultCurrency": "USD",
+    "email": "billing@digitalcreators.com",
+    "createdAt": "2025-06-12T13:20:00Z",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "org_7",
+    "name": "Berlin Latin Festival",
+    "legalName": "Berlin Latin Festival UG",
+    "country": "Germany",
+    "defaultCurrency": "EUR",
+    "email": "accounts@berlinlatin.de",
+    "createdAt": "2025-07-01T09:00:00Z",
+    "status": "ACTIVE"
+  },
+  {
+    "id": "org_8",
+    "name": "Caribbean Business Expo",
+    "legalName": "Caribbean Business Expo NV",
+    "country": "Curacao",
+    "defaultCurrency": "ANG",
+    "email": "finance@caribbeanexpo.com",
+    "createdAt": "2025-07-18T15:10:00Z",
+    "status": "ACTIVE"
   }
 ]

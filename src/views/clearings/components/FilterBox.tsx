@@ -6,6 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { HiOutlineTrash } from "react-icons/hi";
 import type { OrganizationType } from "../../../types/organization";
 import type { FilterValues } from "../types";
+import TertiaryButton from "../../../components/buttons/TertiaryButton";
 
 interface FilterBoxProps {
   filterValues: FilterValues;
@@ -70,22 +71,18 @@ export default function FilterBox({
             onChange={(val) => handleChange("status", val)}
             className="w-48"
           />
-          <button
-            onClick={() => {
-              onReset();
-            }}
-            className="flex items-center gap-1 text-red-500 text-[10px] font-bold hover:text-red-400 mb-3 ml-2 transition-colors uppercase tracking-wider"
-          >
-            <HiOutlineTrash size={14} />
-            Clear Filters
-          </button>
-          <div className="ml-auto">
-            <PrimaryButton
-              onClick={() => onSearch(filterValues)}
-              icon={<IoIosSearch />}
-            >
-              Search For Clearing
-            </PrimaryButton>
+          <div className="ml-auto flex justify-end w-full items-center">
+            <div className="flex gap-10 w-full justify-end items-center">
+              <TertiaryButton onClick={onReset} icon={<HiOutlineTrash />}>
+                Clear
+              </TertiaryButton>
+              <PrimaryButton
+                onClick={() => onSearch(filterValues)}
+                icon={<IoIosSearch />}
+              >
+                Search For Clearing
+              </PrimaryButton>
+            </div>
           </div>
         </div>
       </BoxContainer>
