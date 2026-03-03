@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DashboardLayout from "./DashboardLayout";
 import Clearings from "./views/clearings/Clearings";
+import Organizations from "./views/organizations/Organizations";
 
 function App() {
   const [activeTab, setActiveTab] = useState("clearings");
@@ -8,7 +9,7 @@ function App() {
   return (
     <DashboardLayout activeTab={activeTab} setActiveTab={setActiveTab}>
       {activeTab === "clearings" && <Clearings />}
-      {activeTab === "organizations" && <div>Organizations Content</div>}
+      {activeTab === "organizations" && <Organizations />}
       {activeTab === "reports" && <div>Reports Content</div>}
       {activeTab === "home" && <div>Home Content</div>}
     </DashboardLayout>

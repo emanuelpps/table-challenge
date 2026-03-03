@@ -21,7 +21,6 @@ export default function TableRow({ item, orgName }: TableRowProps) {
   return (
     <tr className="border-b border-gray-800/40 hover:bg-[#1A1A1A] transition-colors">
       <td className="py-4 px-2 text-xs text-gray-500 font-mono">#{item.id}</td>
-
       <td className="py-4 px-2">
         <div className="flex items-center gap-2">
           <OrgAvatar name={orgName} />
@@ -30,19 +29,15 @@ export default function TableRow({ item, orgName }: TableRowProps) {
           </span>
         </div>
       </td>
-
       <td className="py-4 px-2 text-sm text-gray-300 max-w-[160px]">
         <span className="line-clamp-1">{item.reference}</span>
       </td>
-
       <td className="py-4 px-2 text-sm text-gray-400 whitespace-nowrap">
         {item.period === "ON_DEMAND"
           ? "On Demand"
           : item.period.charAt(0) + item.period.slice(1).toLowerCase()}
       </td>
-
       <td className="py-4 px-2 text-sm text-gray-400">{item.currency}</td>
-
       <td className="py-4 px-2 text-right">
         <span className="text-sm font-bold text-white font-mono">
           {item.currency === "EUR" ? "€" : item.currency}{" "}
