@@ -10,8 +10,6 @@ function App() {
     <DashboardLayout activeTab={activeTab} setActiveTab={setActiveTab}>
       {activeTab === "clearings" && <Clearings />}
       {activeTab === "organizations" && <Organizations />}
-      {activeTab === "reports" && <div>Reports Content</div>}
-      {activeTab === "home" && <div>Home Content</div>}
     </DashboardLayout>
   );
 }

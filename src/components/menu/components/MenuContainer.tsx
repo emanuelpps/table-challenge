@@ -7,10 +7,8 @@ export default function MenuContainer({ activeTab, setActiveTab }: TabsProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const MenuNav = [
-    { name: "Home", id: "home" },
     { name: "Clearings", id: "clearings" },
     { name: "Organizations", id: "organizations" },
-    { name: "Reports", id: "reports" },
   ];
 
   const handleTabClick = (id: string) => {
