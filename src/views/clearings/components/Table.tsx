@@ -14,6 +14,19 @@ interface ClearingTableProps {
 const Table = memo(function Table({ data, organizations }: ClearingTableProps) {
   const [search, setSearch] = useState("");
 
+  const titlesTable = [
+    "ID",
+    "Organization",
+    "Reference",
+    "Period",
+    "Currency",
+    "Amount",
+    "Status",
+    "Date",
+    "Action",
+    "Paid",
+  ];
+
   const orgMap = useMemo(() => {
     const map = new Map<OrganizationType["id"], string>();
     organizations.forEach((org) => map.set(org.id, org.name));
@@ -56,16 +69,11 @@ const Table = memo(function Table({ data, organizations }: ClearingTableProps) {
       <table className="w-full text-left">
         <thead>
           <tr className="text-[10px] uppercase text-gray-500 border-b border-gray-800 tracking-wider">
-            <th className="py-3 px-2">ID</th>
-            <th className="py-3 px-2">Organization</th>
-            <th className="py-3 px-2">Reference</th>
-            <th className="py-3 px-2">Period</th>
-            <th className="py-3 px-2">Currency</th>
-            <th className="py-3 px-2 text-right">Amount</th>
-            <th className="py-3 px-2 text-center">Status</th>
-            <th className="py-3 px-2 text-center">Date</th>
-            <th className="py-3 px-2 text-center">Action</th>
-            <th className="py-3 px-2 text-center">Paid</th>
+            {titlesTable.map((title) => (
+              <th key={title} className="py-3 px-2 text-center">
+                {title}
+              </th>
+            ))}
           </tr>
         </thead>
         <tbody>
