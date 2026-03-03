@@ -6,9 +6,9 @@ import { MdOutlinePayments } from "react-icons/md";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center mb-4 px-4 p-10">
+    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-4 px-4 p-10">
       <Title />
-      <div className="flex gap-5">
+      <div className="flex flex-wrap gap-3 w-full md:w-auto">
         <SecondaryButton icon={<IoMdDownload />} children="Export CSV" />
         <PrimaryButton
           icon={<MdOutlinePayments />}
